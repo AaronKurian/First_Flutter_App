@@ -11,22 +11,31 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    appBar: AppBar(
-      title: Text('My First App'),
-      centerTitle: true,
-      backgroundColor: Colors.red[600],
-    ),
-    body: Center(
+      appBar: AppBar(
+        title: Text('My First App'),
+        centerTitle: true,
+        backgroundColor: Colors.red[600],
+      ),
 
-      child: IconButton(
-          onPressed: () {
-            print('you clicked me');
-          },
-          icon: Icon(Icons.alternate_email),
-          style: ElevatedButton.styleFrom(
-            iconColor: Colors.amber, // Correct way to set background color
-          ),
-        ),
+      body: Padding(padding: EdgeInsets.all(30.0), child: Text('hiii'),
+      
+      // body: Container(
+      //   padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 30.0),
+      //   margin: EdgeInsets.all(30.0),
+      //   color: Colors.grey[400],
+      //   child: Text('hello'),
+
+    // body: Center(
+
+    //   child: IconButton(
+    //       onPressed: () {
+    //         print('you clicked me');
+    //       },
+    //       icon: Icon(Icons.alternate_email),
+    //       style: ElevatedButton.styleFrom(
+    //         iconColor: Colors.amber, // Correct way to set background color
+    //       ),
+    //     ),
 
       // child: ElevatedButton.icon(
       //     onPressed: () {
