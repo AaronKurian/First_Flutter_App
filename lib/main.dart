@@ -17,25 +17,53 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[600],
       ),
 
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.start,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
-          Text('Hello , World'),
-          ElevatedButton(
-            onPressed: () {},
-            child: Text('Click Me'),
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.amber,
-            ),
+          Row(
+            children: <Widget>[
+              Text('hello'),
+              Text('world'),
+            ],
           ),
           Container(
-            color: Colors.cyan,
+            color: Colors.lightBlue,
             padding: EdgeInsets.all(20.0),
-            child: Text('inside container!'),
+            child: Text('one'),
+          ),
+          Container(
+            color: Colors.pinkAccent,
+            padding: EdgeInsets.all(30.0),
+            child: Text('two'),
+          ),
+          Container(
+            color: Colors.amber,
+            padding: EdgeInsets.all(40.0),
+            child: Text('three'),
           ),
 
         ],
+      
+      // body: Row(
+      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //   crossAxisAlignment: CrossAxisAlignment.start,
+      //   children: <Widget>[
+      //     Text('Hello , World'),
+      //     ElevatedButton(
+      //       onPressed: () {},
+      //       child: Text('Click Me'),
+      //       style: ElevatedButton.styleFrom(
+      //         backgroundColor: Colors.amber,
+      //       ),
+      //     ),
+      //     Container(
+      //       color: Colors.cyan,
+      //       padding: EdgeInsets.all(20.0),
+      //       child: Text('inside container!'),
+      //     ),
+
+      //   ],
       
 
       // body: Padding(padding: EdgeInsets.all(30.0), child: Text('hiii'),
