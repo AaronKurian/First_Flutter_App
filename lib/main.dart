@@ -17,33 +17,68 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[600],
       ),
 
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: <Widget>[
-          Row(
-            children: <Widget>[
-              Text('hello'),
-              Text('world'),
-            ],
-          ),
-          Container(
-            color: Colors.lightBlue,
-            padding: EdgeInsets.all(20.0),
-            child: Text('one'),
-          ),
-          Container(
-            color: Colors.pinkAccent,
-            padding: EdgeInsets.all(30.0),
-            child: Text('two'),
-          ),
-          Container(
-            color: Colors.amber,
-            padding: EdgeInsets.all(40.0),
-            child: Text('three'),
-          ),
+      body: Row(
+        children: <Widget>[ 
+              Expanded(
+                child: Image.asset('assets/space-1.jpg'),
+                flex: 3,
+                ),
 
-        ],
+              Expanded(
+                  flex: 1,
+                  child: Container(
+                  color: Colors.lightBlue,
+                  padding: EdgeInsets.all(30.0),
+                  child: Text('1'),
+                ),
+              ),
+              Expanded(
+                flex: 1,
+                child: Container(
+                  color: Colors.pinkAccent,
+                  padding: EdgeInsets.all(30.0),
+                  child: Text('2'),
+                ),
+              ),
+              Expanded(
+                flex: 1,
+                child: Container(
+                  color: Colors.amber,
+                  padding: EdgeInsets.all(30.0),
+                  child: Text('3'),
+                ),
+              ),
+            ],
+
+
+
+
+      // body: Column(
+      //   mainAxisAlignment: MainAxisAlignment.end,
+      //   crossAxisAlignment: CrossAxisAlignment.stretch,
+      //   children: <Widget>[
+      //     Row(
+      //       children: <Widget>[
+      //         Text('hello'),
+      //         Text('world'),
+      //       ],
+      //     ),
+      //     Container(
+      //       color: Colors.lightBlue,
+      //       padding: EdgeInsets.all(30.0),
+      //       child: Text('one'),
+      //     ),
+      //     Container(
+      //       color: Colors.pinkAccent,
+      //       padding: EdgeInsets.all(30.0),
+      //       child: Text('two'),
+      //     ),
+      //     Container(
+      //       color: Colors.amber,
+      //       padding: EdgeInsets.all(40.0),
+      //       child: Text('three'),
+      //     ),
+      //   ],
       
       // body: Row(
       //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
